@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area & Perimeter Calculator</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 40px;
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    div {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: inline-block;
+      padding: 20px 30px;
+      margin: 15px;
+      width: 300px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    p {
+      background: #eef2f3;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 15px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background: #ddd;
+      margin: 30px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>📐 Area & Perimeter Calculator</h2>
+
+  <div>
+    <h3>Rectangle</h3>
+    <label>Length:</label>
+    <input type="number" id="rectLength" placeholder="Enter length">
+
+    <label>Width:</label>
+    <input type="number" id="rectWidth" placeholder="Enter width">
+
+    <button onclick="calcRectangle()">Calculate</button>
+    <p id="rectResult"></p>
+  </div>
+
+  <div>
+    <h3>Triangle</h3>
+    <label>Side A:</label>
+    <input type="number" id="sideA" placeholder="Enter side A">
+
+    <label>Side B:</label>
+    <input type="number" id="sideB" placeholder="Enter side B">
+
+    <label>Side C:</label>
+    <input type="number" id="sideC" placeholder="Enter side C">
+
+    <button onclick="calcTriangle()">Calculate</button>
+    <p id="triResult"></p>
+  </div>
+
+  <!-- JS file linked below -->
+  <script src="calc.js"></script>
+</body>
+</html>

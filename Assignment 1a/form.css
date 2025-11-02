@@ -1,0 +1,30 @@
+body{
+    font-family: 'Times New Roman', Times, serif,Arial, Helvetica, sans-serif;
+}
+label {
+    font-size: 20 px;
+    font-weight: 700 ;
+    line-height: 30px;
+    letter-spacing: 10px;
+    word-spacing: 50px;
+    text-transform: lowercase;
+}
+
+.full-name{
+    text-decoration: line-through;
+    text-transform: capitalize;
+    font-size: medium;
+    font-weight: holder;
+    line-height: normal;
+    letter-spacing: normal;
+}
+a {
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+    display: block;
+}
+h1 {
+    text-align: start;
+}
+    

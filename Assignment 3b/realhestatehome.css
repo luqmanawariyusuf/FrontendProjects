@@ -1,0 +1,53 @@
+
+body { margin:0; background:var(--bg); color:var(--text); }
+.container { max-width:var(--container); margin:0 auto; padding:2rem; }
+
+/* Header */
+.site-header { background: white; border-bottom: 1px solid #e6e9ef; position:sticky; top:0; z-index:40; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; }
+.logo { font-weight:700; color:var(--text); text-decoration:none; }
+.nav-list { list-style:none; display:flex; gap:1rem; margin:0; padding:0; }
+.nav-list a { text-decoration:none; color:var(--muted); font-weight:600; }
+.header-cta { display:flex; gap:0.5rem; }
+.btn { padding:0.6rem 1rem; border-radius:8px; text-decoration:none; font-weight:600; }
+.btn-primary { background:var(--accent); color:white; background-color: green; }
+.btn-outline { border:1px solid #e6e9ef; color:white; background-color: red; }
+.btn-secondary { border:1px solid #e6e9ef; color:white;background-color: black; }
+.nav-toggle { display:none; }
+
+/* Hero */
+.hero { padding:3rem 0; background: linear-gradient(180deg, rgba(15,94,255,0.04), transparent 50%); }
+.hero-grid { display:grid; grid-template-columns: 1fr 420px; gap:2rem; align-items:center; }
+.hero-content h1 { font-size:2rem; margin:0 0 1rem; }
+.hero-content p { color:var(--muted); max-width:46ch; }
+.hero-image { height:260px; border-radius:16px; background:url('https://images.unsplash.com/photo-1560184897-493f29d9f2a0?auto=format&fit=crop&w=1400&q=60') center/cover; }
+.hero-actions {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+
+}
+/* Sections */
+.section { padding:3rem 0; }
+.section.alt { background: white; border-top:1px solid #eef2f6; border-bottom:1px solid #eef2f6; }
+
+/* Countries */
+.countries-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:1rem; list-style:none; padding:0; margin-top:1.5rem; }
+.country-card { background:var(--card); border-radius:12px; padding:1rem; text-align:center; }
+.country-card-media { width:100%; height:100px; border-radius:8px; background:#ccc; }
+
+/* Info cards */
+.cards-row { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem; }
+.info-card { background:white; padding:1.25rem; border-radius:12px; border:1px solid #eef2f6; }
+.linkish { color:var(--accent); text-decoration:none; }
+
+/* Flex finance */
+.flex-grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap:1rem; margin-top:1rem; }
+.flex-card { background:white; padding:1rem; border-radius:10px; border:1px solid #eef2f6; }
+
+/* Footer */
+.site-footer { padding:2rem 0; background:white; border-top:1px solid #e6e9ef; }
+.footer-grid { display:grid; grid-template-columns: 1fr 1fr 1fr; gap:1rem; }
+.footer-links { list-style:none; padding:0; }
+.footer-links a { color:var(--muted); text-decoration:none; }
+

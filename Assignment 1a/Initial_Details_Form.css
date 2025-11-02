@@ -1,0 +1,110 @@
+/* General styles */
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+/* Form container */
+.form-container {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  padding: 30px;
+  max-width: 900px;
+  width: 95%;
+}
+
+/* Heading */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #136f5a;
+  font-size: 22px;
+}
+
+/* Grid layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.form-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+/* Form groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group2 {
+  display: flex;
+  flex-direction: column;
+
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.required {
+  color: red;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+/* Inputs & selects */
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: #136f5a;
+  box-shadow: 0 0 5px rgba(19,111,90,0.3);
+}
+
+/* Adviser type buttons */
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #136f5a;
+  border-radius: 6px;
+  background: #fff;
+  color: #136f5a;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-group button:hover {
+  background: #eaf5f2;
+}
+
+.btn-group .active {
+  background: #136f5a;
+  color: #fff;
+}
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter App</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f6f8;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    #counterDisplay {
+      font-size: 5rem;
+      color: #111;
+      margin: 20px 0;
+      min-width: 150px;
+      text-align: center;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      color: #fff;
+    }
+
+    .add {
+      background-color: #28a745;
+    }
+
+    .add:hover {
+      background-color: #1e7e34;
+    }
+
+    .subtract {
+      background-color: #dc3545;
+    }
+
+    .subtract:hover {
+      background-color: #a71d2a;
+    }
+
+    .reset {
+      background-color: #007bff;
+    }
+
+    .reset:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Counter App</h1>
+
+  <!-- Counter Display -->
+  <div id="counterDisplay">0</div>
+
+  <!-- Buttons -->
+  <div class="button-group">
+    <button class="btn add" id="addBtn">Add +1</button>
+    <button class="btn subtract" id="subtractBtn">Subtract -1</button>
+    <button class="btn reset" id="resetBtn">Reset</button>
+  </div>
+
+  <!-- Link to JS file -->
+  <script src="counter.js"></script>
+</body>
+</html>

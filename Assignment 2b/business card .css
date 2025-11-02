@@ -1,0 +1,88 @@
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #f6f6f6;
+  color: #000;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  width: calc(var(--card-width) + var(--bleed) * 2);
+  height: calc(var(--card-height) + var(--bleed) * 2);
+  background: #fff;
+  display: flex;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: var(--bleed);
+ 
+}
+
+.card-left {
+  width: 42%;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: var(--accent-thickness) solid #000;
+  padding: 12px 18px;
+}
+
+.initials {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.card-right {
+  flex: 1;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  margin: 0 0 6px 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.title {
+  margin: 0 0 14px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.85;
+}
+
+.contacts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.contacts li {
+  margin: 6px 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.contacts .label {
+  min-width: 22px;
+  font-weight: 700;
+}
+
+

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Practice: do...while loop</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 0 18px;
+      line-height: 1.5;
+      background: #fafafa;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 8px; color: #333; }
+    .card {
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      margin-bottom: 16px;
+    }
+    .controls {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+    button {
+      padding: 8px 12px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      background: #fff;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background: #f0f0f0;
+    }
+    input[type="number"], input[type="text"] {
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 160px;
+    }
+    .log {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+      background: #f7f7f7;
+      border-radius: 6px;
+      padding: 10px;
+      margin-top: 8px;
+      white-space: pre-wrap;
+      min-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Practice: <code>do...while</code> Loop</h1>
+
+  <!-- Example A -->
+  <div class="card" id="exampleA">
+    <strong>Example A — Counter (up & down support)</strong>
+    <div class="controls">
+      <label>
+        Start:
+        <input id="startA" type="number" value="5" />
+      </label>
+      <label>
+        End (inclusive):
+        <input id="endA" type="number" value="0" />
+      </label>
+      <button id="runA">Run counter</button>
+      <button id="clearA">Clear</button>
+    </div>
+    <div class="log" id="logA"></div>
+  </div>
+
+  <!-- Example B -->
+  <div class="card" id="exampleB">
+    <strong>Example B — Input validation (must be positive integer)</strong>
+    <div class="controls">
+      <input id="guessB" type="number" placeholder="Enter a number" />
+      <button id="validateB">Validate</button>
+      <button id="clearB">Clear</button>
+    </div>
+    <div class="log" id="logB"></div>
+  </div>
+
+  <!-- Example C -->
+  <div class="card" id="exampleC">
+    <strong>Example C — Collect items until you stop</strong>
+    <div class="controls">
+      <input id="itemC" type="text" placeholder="Type an item and click Add" />
+      <button id="addC">Add</button>
+      <button id="finishC">Finish (stop collecting)</button>
+      <button id="resetC">Reset</button>
+    </div>
+    <div class="log" id="logC"></div>
+  </div>
+
+  <p style="color:#555">💡 Tip: Open your browser console (F12 → Console) to see extra logs.</p>
+
+  <script src="dwl.js" defer></script>
+</body>
+</html>

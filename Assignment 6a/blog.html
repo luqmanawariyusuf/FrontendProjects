@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Posts Filter Example</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      padding: 20px;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    h1 {
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    .blog-post {
+      background: white;
+      padding: 20px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .blog-post:hover {
+      transform: scale(1.01);
+    }
+
+    .blog-post h2 {
+      margin: 0 0 8px 0;
+    }
+
+    .blog-post p {
+      margin: 6px 0;
+    }
+
+    a {
+      color: #0078d7;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Latest Blog Posts</h1>
+  <input type="text" id="search" placeholder="Filter by keyword (e.g. AI, startup, finance)..." />
+  <div id="blogContainer"></div>
+
+  <script src="blog.js"></script>
+</body>
+</html>

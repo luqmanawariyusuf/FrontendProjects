@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  
+  <title>Initial Details Form</title>
+  <link rel="stylesheet" href="Initial_Details_Form.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Initial Details</h2>
+    <form>
+      <div class="form-grid">
+        
+        <!-- Row 1 -->
+        <div class="form-group">
+          <label for="advisedBy">Advised by</label>
+          <select id="advisedBy" name="advisedBy">
+            <option value="">Select adviser</option>
+            <option value="adviser1">Adviser 1</option>
+            <option value="adviser2">Adviser 2</option>
+          </select>
+        </div>
+
+        <div class="form-group adviser-type">
+          <label>Adviser type</label>
+          <div class="btn-group">
+            <button type="button" class="active">Name</button>
+            <button type="button">On Behalf</button>
+            <button type="button">Driver</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="adviserName">Adviser's name</label>
+          <input type="text" id="adviserName" name="adviserName" placeholder="Enter name">
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-group">
+          <label for="incidentDate">Incident date &amp; time <span class="required">(required)</span></label>
+          <input type="datetime-local" id="incidentDate" name="incidentDate">
+        </div>
+
+        <div class="form-group">
+          <label for="referenceNumber">Reference number</label>
+          <input type="text" id="referenceNumber" name="referenceNumber" placeholder="Enter number">
+        </div>
+
+        <div class="form-group">
+          <label for="referenceDate">Reference date &amp; time</label>
+          <input type="datetime-local" id="referenceDate" name="referenceDate">
+        </div>
+
+        <!-- Row 3 -->
+        <div class="form-group">
+          <label for="timeKnown">Time known to adviser</label>
+          <input type="datetime-local" id="timeKnown" name="timeKnown">
+        </div>
+
+        <div class="form-group">
+          <label for="startIntake">Start intake time</label>
+          <input type="datetime-local" id="startIntake" name="startIntake">
+        </div>
+
+        <div class="form-group">
+          <label for="endIntake">End of intake time</label>
+          <input type="datetime-local" id="endIntake" name="endIntake">
+        </div>
+</div>
+
+    
+        <div class="form-grid2">
+    <!-- Row 4 -->
+        <div class="form-group2">
+          <label for="email">E-mail address</label>
+          <input type="email" id="email" name="email" placeholder="Enter address">
+        </div>
+
+        <div class="form-group2">
+          <label for="createdBy">Created by <span class="required">(required)</span></label>
+          <input type="text" id="createdBy" name="createdBy" placeholder="Enter name">
+        </div>
+        </div>
+    </form>
+  </div>
+</body>
+</html>

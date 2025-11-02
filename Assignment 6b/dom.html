@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn DOM Manipulation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 40px;
+      background-color: #f0f0f0;
+    }
+    h1 {
+      color: #333;
+    }
+    #colorBox {
+      width: 150px;
+      height: 150px;
+      background-color: lightblue;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background-color: white;
+      margin: 5px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mainHeading">Welcome to DOM Practice</h1>
+
+  <button id="changeTextBtn">Change Heading Text</button>
+  <button id="changeColorBtn">Change Box Color</button>
+
+  <div id="colorBox"></div>
+
+  <h2>My To-Do List</h2>
+  <ul id="todoList">
+    <li>Learn HTML</li>
+    <li>Learn CSS</li>
+    <li>Learn JavaScript</li>
+  </ul>
+
+  <input type="text" id="newItem" placeholder="Add new task..." />
+  <button id="addItemBtn">Add Item</button>
+  <button id="removeItemBtn">Remove Last Item</button>
+
+  <!-- Link the external JavaScript file -->
+  <script src="dom.js"></script>
+</body>
+</html>
